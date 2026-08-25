@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — AIAC Lab</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' };</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; }
+    code, pre, .font-mono { font-family: 'Geist Mono', monospace; }
+  </style>
+  <script>
+    if (localStorage.getItem('theme') === 'light') { document.documentElement.classList.remove('dark'); }
+    else { document.documentElement.classList.add('dark'); }
+  </script>
+</head>
+<body class="bg-white text-zinc-600 dark:bg-[#050505] dark:text-[#888888] antialiased transition-colors duration-200 selection:bg-zinc-900 selection:text-white dark:selection:bg-white dark:selection:text-black">
+
+  <header class="border-b border-zinc-200 dark:border-[#181818] sticky top-0 bg-white/80 dark:bg-[#050505]/80 backdrop-blur-xl z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-5 h-5 bg-zinc-900 dark:bg-white rounded-sm flex items-center justify-center text-white dark:text-black font-bold text-xs tracking-tighter">▲</div>
+        <span class="text-sm font-semibold tracking-tight text-zinc-900 dark:text-white">AIAC <span class="text-zinc-400 dark:text-[#555555] font-normal font-mono text-xs">/ LAB</span></span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8 text-xs font-medium text-zinc-500 dark:text-[#777777]">
+        <a href="index.html" class="hover:text-zinc-900 dark:hover:text-white transition">Overview</a>
+        <a href="research.html" class="text-zinc-900 dark:text-white font-semibold">Research</a>
+        <a href="people.html" class="hover:text-zinc-900 dark:hover:text-white transition">People</a>
+        <a href="publications.html" class="hover:text-zinc-900 dark:hover:text-white transition">Publications</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <button id="theme-toggle" class="p-1.5 rounded border border-zinc-200 dark:border-[#222222] text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white text-xs font-mono transition">
+          <span class="dark:hidden">☾ Dark</span>
+          <span class="hidden dark:inline">☼ Light</span>
+        </button>
+        <a href="intake.html" class="text-xs font-mono text-white bg-zinc-900 dark:bg-[#141414] border border-zinc-900 dark:border-[#262626] px-3.5 py-1.5 rounded hover:opacity-90 transition">Intake →</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-20">
+    <div class="text-[11px] font-mono text-zinc-400 dark:text-[#555555] uppercase tracking-widest mb-4">RESEARCH & ARCHITECTURE</div>
+    <h1 class="text-3xl sm:text-5xl font-medium tracking-tight text-zinc-900 dark:text-white mb-6">Active Research Tracks</h1>
+    <p class="text-base text-zinc-600 dark:text-[#777777] max-w-2xl leading-relaxed mb-16">
+      Our technical roadmaps focus on systems execution, compute boundaries, and structured model intelligence.
+    </p>
+
+    <div class="space-y-12">
+      <!-- Track 1 -->
+      <div class="p-8 rounded-lg bg-zinc-50 dark:bg-[#0c0c0c] border border-zinc-200 dark:border-[#1a1a1a]">
+        <div class="text-xs font-mono text-zinc-400 dark:text-[#555555] mb-4">TRACK-01 // AGENTIC SYSTEMS</div>
+        <h2 class="text-xl font-medium text-zinc-900 dark:text-white mb-4">Deterministic Tool Execution & Multi-Agent Consensus</h2>
+        <p class="text-sm text-zinc-600 dark:text-[#777777] leading-relaxed mb-6">
+          Investigating self-correcting text-to-SQL logic, multi-agent code auditing protocols, and automated context retrieval workflows designed for complex enterprise pipelines.
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-zinc-600 dark:text-[#999999]">
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">LangGraph</span>
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">FastAPI Microservices</span>
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">Structured Tool Calling</span>
+        </div>
+      </div>
+
+      <!-- Track 2 -->
+      <div class="p-8 rounded-lg bg-zinc-50 dark:bg-[#0c0c0c] border border-zinc-200 dark:border-[#1a1a1a]">
+        <div class="text-xs font-mono text-zinc-400 dark:text-[#555555] mb-4">TRACK-02 // SYSTEMS & COMPUTE</div>
+        <h2 class="text-xl font-medium text-zinc-900 dark:text-white mb-4">Model Quantization & Edge Video Stream Telemetry</h2>
+        <p class="text-sm text-zinc-600 dark:text-[#777777] leading-relaxed mb-6">
+          Quantization schemes (INT8/FP4), runtime graph compilation, TensorRT execution, and zero-loss edge acceleration for visual telemetry streams on low-power devices.
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-zinc-600 dark:text-[#999999]">
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">TensorRT / ONNX</span>
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">YOLO Quantization</span>
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">Edge Benchmarks</span>
+        </div>
+      </div>
+
+      <!-- Track 3 -->
+      <div class="p-8 rounded-lg bg-zinc-50 dark:bg-[#0c0c0c] border border-zinc-200 dark:border-[#1a1a1a]">
+        <div class="text-xs font-mono text-zinc-400 dark:text-[#555555] mb-4">TRACK-03 // REGIONAL NLP</div>
+        <h2 class="text-xl font-medium text-zinc-900 dark:text-white mb-4">Low-Resource Document Intelligence & Synthetic Data</h2>
+        <p class="text-sm text-zinc-600 dark:text-[#777777] leading-relaxed mb-6">
+          Multimodal parsing of regional Indic language records, cross-lingual emotional feature extraction, and synthetic dataset generation pipelines.
+        </p>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-zinc-600 dark:text-[#999999]">
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">Indic Transformers</span>
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">Surya Layout Parsing</span>
+          <span class="px-2.5 py-1 rounded bg-white dark:bg-[#141414] border border-zinc-200 dark:border-[#222222]">JSONSchema Validation</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-zinc-200 dark:border-[#181818] py-12 text-xs text-zinc-400 dark:text-[#555555] font-mono">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+      <div>AIAC LAB © 2026</div>
+      <div>Research Tracks</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const html = document.documentElement;
+      if (html.classList.contains('dark')) { html.classList.remove('dark'); localStorage.setItem('theme', 'light'); }
+      else { html.classList.add('dark'); localStorage.setItem('theme', 'dark'); }
+    });
+  </script>
+</body>
+</html>
