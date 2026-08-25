@@ -3,189 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AIAC | Advanced Intelligence & Applied Computing | BMSIT & M</title>
-  <!-- Tailwind CSS CDN -->
+  <title>AIAC — Advanced Intelligence & Applied Computing</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    code, pre { font-family: 'JetBrains Mono', monospace; }
+    body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; }
+    code, pre, .font-mono { font-family: 'Geist Mono', monospace; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-black text-[#888888] antialiased selection:bg-white selection:text-black">
 
-  <!-- Main Institutional Header -->
-  <nav class="fixed top-0 inset-x-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
-      <div class="flex items-center space-x-3 py-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-400 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20">
-          AI
-        </div>
-        <div>
-          <span class="text-2xl font-bold tracking-tight text-white">AIAC <span class="text-xs text-indigo-400 font-semibold border border-indigo-500/30 px-2 py-0.5 rounded-full ml-1">Lab</span></span>
-          <p class="text-[10px] text-slate-500 font-medium">BMS Institute of Technology and Management</p>
-        </div>
-      </div>
-      <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+  <!-- Header -->
+  <header class="border-b border-[#1f1f1f] sticky top-0 bg-black/80 backdrop-blur-md z-50">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+      <a href="#" class="text-sm font-semibold tracking-tight text-white hover:opacity-80 transition">
+        AIAC<span class="text-[#555555] font-normal"> / Lab</span>
+      </a>
+      <nav class="flex items-center space-x-6 text-xs">
         <a href="#about" class="hover:text-white transition">About</a>
         <a href="#research" class="hover:text-white transition">Research</a>
-        <a href="people.html" class="hover:text-white transition">People</a>
-        <a href="publications.html" class="hover:text-white transition">Publications</a>
-        <a href="#admissions" class="hover:text-white transition">Admissions</a>
-        <a href="news.html" class="hover:text-white transition">News</a>
-      </div>
-      <div>
-        <a href="#apply" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs md:text-sm font-semibold px-4 py-2.5 rounded-lg transition shadow-md shadow-indigo-600/30">
-          <span>Apply to AIAC</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero / Introduction -->
-  <header class="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-slate-950">
-    <div class="absolute inset-0 -z-10 flex items-center justify-center">
-      <div class="w-[600px] h-[350px] bg-indigo-600/20 blur-[130px] rounded-full"></div>
-      <div class="w-[400px] h-[250px] bg-cyan-500/15 blur-[100px] rounded-full"></div>
-    </div>
-
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-300 text-xs font-semibold mb-6">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        CSE Research Center of Excellence
-      </div>
-      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
-        Advancing Applied Computing and <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-sky-300 to-cyan-400">Intelligent Systems</span>
-      </h1>
-      <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
-        The Advanced Intelligence & Applied Computing (AIAC) Lab incubates undergraduate researchers at BMSIT & M, focusing on scalable, production-grade intelligence, optimization, and human-centric computing.
-      </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#research" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-semibold text-white transition flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/25">
-          Research Domains
-        </a>
-        <a href="people.html" class="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white font-semibold transition flex items-center justify-center gap-2">
-          Meet the Team
-        </a>
-      </div>
+        <a href="#governance" class="hover:text-white transition">Governance</a>
+        <a href="#intake" class="text-white hover:opacity-80 transition">Intake →</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Key Research Areas -->
-  <section id="research" class="py-24 border-t border-slate-900 bg-slate-950/50">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-xs uppercase tracking-widest font-bold text-indigo-400 mb-2">Research Focus</h2>
-        <p class="text-3xl font-bold tracking-tight text-white">Defining the Future of Applied Intelligence</p>
+  <!-- Hero Section -->
+  <main class="max-w-5xl mx-auto px-6">
+    <section class="py-24 md:py-32 border-b border-[#1f1f1f]">
+      <div class="inline-block text-[11px] font-mono uppercase tracking-widest text-[#666666] mb-6">
+        Applied Research & Systems Engineering
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-medium tracking-tight text-white max-w-3xl leading-[1.15] mb-8">
+        Advancing Applied Intelligence and Scalable Computing Systems.
+      </h1>
+      <p class="text-base sm:text-lg text-[#888888] max-w-2xl leading-relaxed font-normal">
+        The Advanced Intelligence & Applied Computing (AIAC) initiative operates at the intersection of production systems, multi-agent frameworks, and compute-efficient model optimization.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 border-b border-[#1f1f1f]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#666666]">01 / Mission</div>
+        <div class="md:col-span-2 space-y-6 text-sm sm:text-base leading-relaxed text-[#aaaaaa]">
+          <p>
+            AIAC structures research like modern engineering organizations: short sprint cadences, modular architecture, and public validation through code and open publications.
+          </p>
+          <p class="text-[#777777]">
+            We incubate early-stage engineers through direct collaboration with senior industry architects and applied AI practitioners, focusing on real-world constraints over purely theoretical models.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section id="research" class="py-20 border-b border-[#1f1f1f]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#666666]">02 / Research Domains</div>
+        <div class="md:col-span-2">
+          <p class="text-sm sm:text-base text-[#aaaaaa]">Three core areas of applied investigation and systems engineering.</p>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="divide-y divide-[#1f1f1f]">
         <!-- Area 1 -->
-        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition">
-          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-6">
-            <i data-lucide="brain-circuit" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Cognitive & Agentic Systems</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Research into adaptive multi-agent orchestration, resilient decision-making frameworks, and contextual retrieval mechanisms for complex, open-ended environments.
+        <div class="py-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <h3 class="text-base font-medium text-white">Agentic Systems</h3>
+          <p class="text-sm text-[#777777] md:col-span-2 leading-relaxed">
+            Multi-agent consensus protocols, deterministic tool execution, and automated context retrieval workflows designed for complex enterprise pipelines.
           </p>
-          <span class="text-xs font-mono text-indigo-300">Scalable Autonomy • Multi-Agent consensus • Planning Workflows</span>
         </div>
 
         <!-- Area 2 -->
-        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition">
-          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6">
-            <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Model Systems & Optimization</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Optimizing computational inference, establishing robust deployment architectures, and defining production standards for large-scale applied models across diverse hardware.
+        <div class="py-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <h3 class="text-base font-medium text-white">Model Systems & Edge</h3>
+          <p class="text-sm text-[#777777] md:col-span-2 leading-relaxed">
+            Inference latency optimization, post-training quantization, and model serving across heterogeneous, resource-constrained hardware targets.
           </p>
-          <span class="text-xs font-mono text-cyan-300">Model Quantization • Serving Architectures • Performance Benchmarking</span>
         </div>
 
         <!-- Area 3 -->
-        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
-            <i data-lucide="eye" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Spatial Intelligence & Vision</h3>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Advancing visual reasoning and spatial understanding, including efficient real-time anomaly detection, semantic analysis, and human-environment interaction.
+        <div class="py-8 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <h3 class="text-base font-medium text-white">Regional NLP & Vision</h3>
+          <p class="text-sm text-[#777777] md:col-span-2 leading-relaxed">
+            Low-resource Indic language representations, structured document intelligence, and real-time visual anomaly detection on streaming feeds.
           </p>
-          <span class="text-xs font-mono text-emerald-300">Visual Reasoning • Real-time Anomaly Detection • Semantic Interpretation</span>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Admissions & Intake Info -->
-  <section id="admissions" class="py-24 border-t border-slate-900 bg-slate-950">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-xs uppercase tracking-widest font-bold text-indigo-400 mb-2">Join the Lab</h2>
-          <p class="text-3xl font-bold text-white mb-6">Student Intake & Application</p>
-          <p class="text-slate-400 text-sm leading-relaxed mb-6">
-            Admissions to AIAC are competitive, focusing on resourcefulness, coding proficiency, and applied grit. We prioritize candidates who have successfully completed the 3-week builder bootcamp.
-          </p>
-          <div class="space-y-4">
-            <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-800 bg-slate-900/30">
-              <i data-lucide="user-plus" class="w-6 h-6 text-indigo-400 shrink-0 mt-0.5"></i>
-              <div>
-                <h4 class="text-sm font-semibold text-white">Eligible Students</h4>
-                <p class="text-xs text-slate-400 mt-1">2nd Semester BE/BTech (CSE/ISE) Students (Minimum 6.0 CGPA / 60% standard).</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-800 bg-slate-900/30">
-              <i data-lucide="clock-3" class="w-6 h-6 text-cyan-400 shrink-0 mt-0.5"></i>
-              <div>
-                <h4 class="text-sm font-semibold text-white">Intake Cycles</h4>
-                <p class="text-xs text-slate-400 mt-1">Cohorts are inducted bi-annually (Fall/Spring).</p>
-              </div>
-            </div>
+    <!-- Governance & Mentorship -->
+    <section id="governance" class="py-20 border-b border-[#1f1f1f]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#666666]">03 / Dual Mentorship</div>
+        <div class="md:col-span-2 space-y-8">
+          <div>
+            <h4 class="text-sm font-medium text-white mb-2">Systems Architecture Advisory</h4>
+            <p class="text-sm text-[#777777] leading-relaxed">
+              Bi-weekly strategic syncs led by a Principal Architect (15+ Years Industry Experience) focusing on system resilience, scalability, and intellectual property.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-sm font-medium text-white mb-2">Engineering & Code Audits</h4>
+            <p class="text-sm text-[#777777] leading-relaxed">
+              Weekly standups led by an Applied AI Practitioner (3+ Years Experience in Agents & LLMs) enforcing trunk-based Git flows, PR reviews, and testing rigor.
+            </p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 text-center">
-          <i data-lucide="sparkles" class="w-10 h-10 text-amber-400 mx-auto mb-4"></i>
-          <h3 class="text-xl font-bold text-white mb-4">Ready to Build?</h3>
-          <p class="text-sm text-slate-300 mb-6">Applications for the [Current Cohort Name] are currently under review. Successful applicants will be notified for the interview phase.</p>
-          <a href="#apply" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 font-semibold text-white transition shadow-xl shadow-indigo-600/30">
-            Intake Portal
-          </a>
+    <!-- Intake / CTA -->
+    <section id="intake" class="py-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-baseline">
+        <div class="text-xs font-mono uppercase tracking-wider text-[#666666]">04 / Intake</div>
+        <div class="md:col-span-2 space-y-6">
+          <h3 class="text-2xl font-medium tracking-tight text-white">Cohort Induction</h3>
+          <p class="text-sm text-[#777777] leading-relaxed">
+            Open to undergraduate engineers in early semesters. Admission is merit-based and determined solely through a 48-hour hands-on technical screening task.
+          </p>
+          <div class="pt-2">
+            <a href="https://forms.google.com" target="_blank" class="inline-flex items-center text-sm font-medium text-white bg-[#161616] hover:bg-[#222222] border border-[#2a2a2a] px-5 py-2.5 rounded transition">
+              Apply via Intake Form ↗
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="py-12 border-t border-slate-900 text-center text-xs text-slate-500">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="text-left">
-        <p class="font-semibold text-slate-300 mb-1">AIAC Lab</p>
-        <p>Advanced Intelligence & Applied Computing</p>
-        <p>BMSIT & M, Bengaluru, India.</p>
-      </div>
-      <div>
-        <p class="font-semibold text-slate-300 mb-1">Contact</p>
-        <p>Email: <a href="mailto:aiaclab@bmsit.ac.in" class="text-indigo-400 hover:underline">aiaclab@bmsit.ac.in</a></p>
-      </div>
-      <div class="text-right">
-        <p class="font-semibold text-slate-300 mb-1">Affiliations</p>
-        <p>CSE Department, BMSIT & M</p>
-        <p>© 2026. All rights reserved.</p>
-      </div>
+  <footer class="border-t border-[#1f1f1f] py-10 text-xs text-[#555555]">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div>© 2026 AIAC Lab. All rights reserved.</div>
+      <div class="font-mono text-[#444444]">Designed for Applied Systems & Research</div>
     </div>
   </footer>
 
-  <script>
-    lucide.createIcons();
-  </script>
 </body>
 </html>
